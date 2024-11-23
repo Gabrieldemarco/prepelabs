@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepeLabs - Donde la pasión y la tecnología se encuentran</title>
+    <style>
+        /* CSS Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #264653, #2a9d8f);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service h3 {
+            margin-bottom: 1rem;
+            color: #2a9d8f;
+        }
+
+        .service p {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #264653;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PrepeLabs</h1>
+        <nav>
+            <a href="#about">Nosotros</a>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Donde la pasión y la tecnología se encuentran</h2>
+        <p>Innovamos para transformar el futuro de tu negocio.</p>
+    </section>
+
+    <section id="services" class="services">
+        <div class="service">
+            <h3>Desarrollo de Software</h3>
+            <p>Soluciones personalizadas para tus necesidades.</p>
+        </div>
+        <div class="service">
+            <h3>Ciberseguridad</h3>
+            <p>Protege tus datos con nuestras tecnologías avanzadas.</p>
+        </div>
+        <div class="service">
+            <h3>DevOps</h3>
+            <p>Optimización y automatización de procesos IT.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PrepeLabs. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript: Añadir interactividad en el futuro si es necesario
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
